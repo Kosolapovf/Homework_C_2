@@ -7,7 +7,7 @@
 /* Console.Clear();
 int numbers = new Random().Next(100, 999);
 int a = numbers / 10 % 10;
-Console.Write($"{numbers} -> {a}"); */
+Console.Write($"{number} -> {a}"); */
 /* ========================================================= */
 
 /* ЗАДАЧА №2 
@@ -20,13 +20,14 @@ Console.Write($"{numbers} -> {a}"); */
 /* Console.Clear();
 Console.Write("введите число: ");
 int numbers = Convert.ToInt32(Console.ReadLine());
-while (numbers < 100 && numbers > 999)
+while (numbers > 1000)
 {
     numbers = numbers / 10;
-    return;
 }
-int a = numbers % 10;
-Console.WriteLine($"{numbers} -> {a}"); */
+if (numbers >= 100 && numbers <= 999)
+    Console.WriteLine(numbers = numbers % 10);
+else if (numbers <= 99)
+    Console.WriteLine("третьей цифры нет"); */
 
 /* ========================================================= */
 
